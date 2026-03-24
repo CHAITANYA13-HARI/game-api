@@ -20,18 +20,13 @@ export default function handler(req, res) {
     }
   ];
 
-  // GET /api/games
-  if (req.url === "/api/games") {
-    return res.status(200).json(games);
-  }
+  const id = req.url.split("/").pop();
 
-  // GET /api/games/:id
-  const match = req.url.match(/\/api\/games\/(\d+)/);
-  if (match) {
-    const game = games.find(g => g.id == match[1]);
+  if (id && !isNaN(id)) {
+    const game = games.find(g => g.id == id);
     if (!game) return res.status(404).json({ error: "Not found" });
     return res.status(200).json(game);
   }
 
-  return res.status(200).send("API working 🚀");
+  return res.status(200).json(games);
 }
