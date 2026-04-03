@@ -14,8 +14,8 @@ export default function handler(req, res) {
     },
     {
       id: 3,
-      name: "Tap Game",
-      url: "https://chaitanya13-hari.github.io/tap/",
+      name: "Snake Game",
+      url: "https://chaitanya13-hari.github.io/snake/",
       thumbnail: "https://via.placeholder.com/150?text=Tap"
     }
   ];
