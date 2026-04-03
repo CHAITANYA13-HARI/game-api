@@ -8,12 +8,6 @@ export default function handler(req, res) {
     },
     {
       id: 2,
-      name: "Flappy Bird",
-      url: "https://chaitanya13-hari.github.io/flappy/",
-      thumbnail: "https://via.placeholder.com/150?text=Flappy"
-    },
-    {
-      id: 3,
       name: "Snake Game",
       url: "https://chaitanya13-hari.github.io/snake/",
       thumbnail: "https://via.placeholder.com/150?text=Tap"
